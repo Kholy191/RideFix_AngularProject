@@ -9,7 +9,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { ICategory } from '../../../Interfaces/icategory';
-import { NgClass, NumberSymbol } from '@angular/common';
+import { NumberSymbol } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { GetLocation } from '../../../Services/LocationService/get-location';
@@ -18,7 +18,7 @@ import { TechnicianService } from '../../../Services/TechnicianService/technicia
 
 @Component({
   selector: 'app-request-emergency-component',
-  imports: [NgClass, FormsModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './request-emergency-component.html',
   styleUrl: './request-emergency-component.css',
   encapsulation: ViewEncapsulation.None, // ✨ الحل هنا

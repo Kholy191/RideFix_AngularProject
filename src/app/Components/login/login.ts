@@ -35,15 +35,18 @@ export class LoginComponent {
       next: (res) => {
         const token = res.token;
         console.log('Login successful, token:', token);
-        
+             
 
         this.tokenService.setToken(token);
+        const decodedToken: any = jwtDecode(token);
+        
         if(decodedToken.Role==="CarOwner"){
         this.router.navigate(['/CarOwner/Home']);
         }else if(decodedToken.Role==="Technician") {
             this.router.navigate(['/technician/requests']);
           this.userStorage.setUserId(decodedToken.Id);
           this.userStorage.setUserName(decodedToken.Name);
+           console.log('user id from token:', decodedToken.Id);
             //  this.userStorage.setUserimg(decodedToken.Id);
         }
         this.userStorage.setUserRole(decodedToken.Role);

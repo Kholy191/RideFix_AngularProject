@@ -28,8 +28,10 @@ export class TechnicianService {
   }
 
   public getTechDetails(
+    
     Id: number
   ): Observable<HttpResponse<IProfileResponse>> {
+  
     return this.clientService.get<IProfileResponse>(
       `http://localhost:5038/api/Technician/${this.profileViewId}`,
       { observe: 'response' }

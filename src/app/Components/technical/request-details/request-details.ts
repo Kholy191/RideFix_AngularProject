@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 import { ItechRequect } from '../../../Interfaces/itech-requect';
 import { TemplateRequest } from '../template-request/template-request';
 import { TemplateRequestdetails } from '../template-requestdetails/template-requestdetails';
@@ -8,7 +8,7 @@ import { Ihistorytech } from '../../../Interfaces/ihistorytech';
 
 @Component({
   selector: 'app-request-details',
-  imports: [RouterLink,RouterModule,TemplateRequestdetails],
+  imports: [TemplateRequestdetails],
   templateUrl: './request-details.html',
   styleUrl: './request-details.css'
 })

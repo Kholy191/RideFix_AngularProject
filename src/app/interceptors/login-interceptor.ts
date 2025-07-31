@@ -4,7 +4,7 @@ import { TokenService } from '../Services/TokenService/tokenservice';
 
 export const loginInterceptor: HttpInterceptorFn = (req, next) => {
   const tokenService = inject(TokenService);
-  const token = tokenService.getToken(); // ✅ استخدم السيرفس بدل localStorage
+  const token = tokenService.getToken(); 
 
   console.log('✅ Interceptor triggered');
   console.log('✅ Token from service:', token);

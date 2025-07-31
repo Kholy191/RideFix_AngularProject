@@ -1,19 +1,14 @@
 import { IRequestBrief } from './../../../Interfaces/irequest-brief';
 import { Component, inject, OnInit, ViewEncapsulation } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { RequestAlertComponent } from '../request-alert-component/request-alert-component';
 import { RequestService } from '../../../Services/RequestService/request-service';
-import { ReviewModelController } from '../review-model-controller/review-model-controller';
-import { ChatComponent } from '../../chat-component/chat-component';
 
 @Component({
   selector: 'app-car-owner-home-component',
   imports: [
-    RouterOutlet,
     RouterLink,
     RequestAlertComponent,
-    ReviewModelController,
-    ChatComponent,
   ],
   templateUrl: './car-owner-home-component.html',
   styleUrl: './car-owner-home-component.css',

@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
   imports: [],
   templateUrl: './tech-select.html',
   styleUrl: './tech-select.css',
-  encapsulation: ViewEncapsulation.None, // ✨ الحل هنا
+  encapsulation: ViewEncapsulation.None, 
 })
 export class TechSelect implements OnInit {
   routeService = inject(Router);

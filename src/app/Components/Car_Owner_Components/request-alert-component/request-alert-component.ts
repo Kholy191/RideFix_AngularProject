@@ -1,13 +1,13 @@
 import { RequestService } from './../../../Services/RequestService/request-service';
 import { Component, inject, OnInit } from '@angular/core';
 import { IRequestBrief } from '../../../Interfaces/irequest-brief';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { setThrowInvalidWriteToSignalError } from '@angular/core/primitives/signals';
 import { ReviewModelController } from '../review-model-controller/review-model-controller';
 @Component({
   selector: 'app-request-alert-component',
-  imports: [RouterOutlet, ReviewModelController],
+  imports: [ReviewModelController],
   templateUrl: './request-alert-component.html',
   styleUrl: './request-alert-component.css',
 })

@@ -18,7 +18,6 @@ import { TechnicianModule } from './Components/technical/technician-module/techn
 
 
 import { ProfileView } from './Components/Car_Owner_Components/profile-view/profile-view';
-import { Techchat } from './Components/technical/techchat/techchat';
 import { RequestHistoryComponent } from './Components/Car_Owner_Components/request-history-component/request-history-component';
 
 export const routes: Routes = [
